@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url('./../images/sport-car.jpg');
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90px;
+    background-color: transparent;
+    padding: 10px 50px;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+header.header .logo {
+    margin-right: 50px;
+}
+
+header.header ul.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header.header ul.menu-list li.menu-item {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+header.header ul.menu-list li.menu-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+main.main {
+    margin-top: 90px;
+    padding: 50px 70px 50px;
+    position: relative;
+}
+
+main.main h1 {
+    font-size: 110px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+main.main .hero {
+    position: absolute;
+    padding: 30px;
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    max-width: 28%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.01);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    animation: blurry .2s ease-in-out ;
+    -webkit-animation: blurry .2s ease-in-out;
+}
+
+@keyframes blurry {
+    0% {
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+    }
+
+    100% {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+main.main .hero p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+main.main .hero p span {
+    display: block;
+    letter-spacing: 1.4px;
+}
+
+main.main .hero p span.model {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+main.main .hero h5 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 1.4px;
+}
